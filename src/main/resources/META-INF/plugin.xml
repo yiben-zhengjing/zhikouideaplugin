@@ -15,4 +15,10 @@
     <applicationListeners>
         <listener class="com.github.yibenzhengjing.zhikouideaplugin.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
     </applicationListeners>
+    <actions>
+        <action id="hello" class="com.github.yibenzhegnjing.zhikouideaplugin.HelloAction" text="Hello"
+                description="IDEA Hello Wrold">
+            <add-to-group group-id="FileMenu" anchor="first"/>
+        </action>
+    </actions>
 </idea-plugin>
